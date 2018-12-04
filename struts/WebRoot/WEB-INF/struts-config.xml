@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struts>
+    <formbeans>
+        <bean name="flag" class="bisness.FlagForm"/>
+        <bean name="user" class="test.TestForm"/>
+    </formbeans>
+    <action-mapping>
+        <action name="flag" type="bisness.FlagAction" path="/flag">
+            <forward name="success" value="/view/Success.jsp"></forward>
+            <forward name="failure" value="/view/Failure.jsp"></forward>
+        </action>
+        <action name="user" type="test.TestAction" path="/user">
+            <forward name="success" value="/view/Success.jsp"></forward>
+            <forward name="failure" value="/view/Failure.jsp"></forward>
+        </action>
+    </action-mapping>
+</struts>
